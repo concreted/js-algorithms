@@ -4,7 +4,7 @@ Array.prototype.swap = function(i,j) {
   this[j] = temp;
 };
 
-function bubbleSort(array) {
+var bubbleSort = module.exports = function(array) {
   for (var i = 0; i < array.length-1; i++) {
     for (var j = 0; j < array.length-1; j++) {
       if (array[j] > array[j+1]) {
@@ -13,6 +13,4 @@ function bubbleSort(array) {
     }
   }
   return array;
-}
-
-console.log(bubbleSort([4,3,2,1]));
+};

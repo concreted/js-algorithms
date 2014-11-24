@@ -10,3 +10,21 @@ describe('Rotated arrays', function() {
     assert.equal(1, rotatedSortedArrayMin([2,3,4,5,1]));
   });
 });
+
+describe('Bubble Sort', function() {
+  var bubbleSort = require('../array/bubbleSort');
+  it('should sort using bubble sort', function() {
+    assert.deepEqual(bubbleSort([4,3,2,1]), [1,2,3,4]);
+    assert.deepEqual(bubbleSort([1,2,3,4]), [1,2,3,4]);
+    assert.deepEqual(bubbleSort([3,2,5,7,4,1,6,8,9]), [1,2,3,4,5,6,7,8,9]);
+  });
+});
+
+describe('Insertion Sort', function() {
+  var insertionSort = require('../array/insertionSort');
+  it('should sort using insertion sort', function() {
+    assert.deepEqual(insertionSort([4,3,2,1]), [1,2,3,4]);
+    assert.deepEqual(insertionSort([1,2,3,4]), [1,2,3,4]);
+    assert.deepEqual(insertionSort([3,2,5,7,4,1,6,8,9]), [1,2,3,4,5,6,7,8,9]);
+  });
+});
