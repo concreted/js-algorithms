@@ -28,3 +28,12 @@ describe('Insertion Sort', function() {
     assert.deepEqual(insertionSort([3,2,5,7,4,1,6,8,9]), [1,2,3,4,5,6,7,8,9]);
   });
 });
+
+describe('isRotation', function() {
+  var isRotation = require('../array/isRotation');
+  it('should find rotations', function() {
+    assert(isRotation('waterbottle', 'erbottlewat'));
+    assert(!isRotation('waterbottl', 'erbottlewat'));
+    assert(isRotation('erbottlewat', 'waterbottle'));
+  });
+});

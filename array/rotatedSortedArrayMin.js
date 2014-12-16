@@ -14,7 +14,9 @@ of those three elements.
 
 */
 
-var rotatedSortedArrayMin = module.exports = function(array) {
+module.exports = rotatedSortedArrayMin;
+
+function rotatedSortedArrayMin(array) {
   var l = 0;
   var r = array.length-1;
   var mid = Math.floor((r-l)/2);
